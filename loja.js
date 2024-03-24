@@ -135,6 +135,9 @@ async function index() {
     }
 
     document.querySelector("#finalizar").addEventListener("click", async () => {
+        if (my_carrinho.length == 0) {
+            return alert("Seu carrinho está vazio")
+        }
         await fetch(`https://smoretti.squareweb.app/carrinho`, {
             method:"POST",
             headers:{
