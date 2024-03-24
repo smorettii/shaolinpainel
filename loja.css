@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#top {
+    display: flex;
+    background-color: rgb(16, 16, 16);
+    padding: 40px;
+    justify-content: center;
+}
+
+#top h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+#top img {
+    width: 50px;
+    filter: invert(1);
+    margin-right: 10px
+}
+
+body {
+    background-color: rgb(29, 29, 29)
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#produtos {
+    width: 90%;
+    background-color: rgb(24, 24, 24);
+    padding: 30px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#produto {
+    width: 300px;
+    height: 350px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:15px;
+    margin-right:10px;
+    margin-bottom:10px
+}
+
+select {
+    background-color:rgb(42, 42, 42);
+    border:none;
+    border-radius: 4px;
+    color:white;
+    font-family: sans-serif;
+}
+
+select:focus {
+    outline: none;
+}
+
+select::backdrop {
+    border:none;
+}
+
+select option:checked {
+    background-color: #282727;
+    color: #ffffff;
+  }
+
+#produto button {
+    width:60%;
+    height:30px;
+    border:none;
+    border-radius: 5px;
+    background-color:rgb(42, 42, 42);
+    color:white;
+    font-family: sans-serif;
+    cursor:pointer;
+    transition:200ms ease-in-out 
+}
+
+#produto button:hover {
+    transform: scale(1.02);
+    background-color: rgb(45, 45, 45);
+}
+
+#produto img {
+    width: 270px;
+    border-radius: 10px;
+}
+
+#produto h1 {
+    color:white;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+#finalizar {
+    display:inline-block;
+    position:fixed;
+    padding:0 10px;
+    height:30px;
+    color:white;
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 4px;
+    border:none;
+    bottom:5px;
+    left:50%;
+    transform:translateX(-50%)
+}
+
+@media (max-width:768px) {
+    #top {
+        padding: 20px
+    }
+
+    #top h1 {
+        font-size: 27px;
+    }
+
+    #top img {
+        width: 40px;
+        filter: invert(1);
+        margin-right: 10px
+    }
+}
